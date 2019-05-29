@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belatrix.WebApi", "Belatrix.WebApi\Belatrix.WebApi.csproj", "{83736A5C-0BF5-4195-B83A-094760B94FF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Belatrix.WebApi.Models", "Belatrix.Models\Belatrix.WebApi.Models.csproj", "{EA60782B-129D-4B15-82E7-7BD371AE0C50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83736A5C-0BF5-4195-B83A-094760B94FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83736A5C-0BF5-4195-B83A-094760B94FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83736A5C-0BF5-4195-B83A-094760B94FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83736A5C-0BF5-4195-B83A-094760B94FF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA60782B-129D-4B15-82E7-7BD371AE0C50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA60782B-129D-4B15-82E7-7BD371AE0C50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA60782B-129D-4B15-82E7-7BD371AE0C50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA60782B-129D-4B15-82E7-7BD371AE0C50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15BACB0B-2EEB-4C90-9968-615EB394EB26}
+	EndGlobalSection
+EndGlobal
