@@ -17,17 +17,21 @@ namespace Belatrix.WebApi.Repository.Postgreql
 
         public DbSet<Customer> Customers { get; set; }
 
-        public DbSet<Customer> Order { get; set; }
+        public DbSet<Order> Order { get; set; }
 
-        public DbSet<Customer> OrderItem { get; set; }
+        public DbSet<OrderItem> OrderItem { get; set; }
 
-        public DbSet<Customer> Product { get; set; }
+        public DbSet<Product> Product { get; set; }
 
-        public DbSet<Customer> Supplier { get; set; }
+        public DbSet<Supplier> Supplier { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new CustomerConfig());
+            modelBuilder.ApplyConfiguration(new OrderConfig());
+            modelBuilder.ApplyConfiguration(new OrderItemConfig());
+            modelBuilder.ApplyConfiguration(new ProductConfig());
+            modelBuilder.ApplyConfiguration(new SupplierConfig());
         }
     }
 }
