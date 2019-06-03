@@ -17,6 +17,14 @@ namespace Belatrix.WebApi.Repository.Postgreql
 
         public DbSet<Customer> Customers { get; set; }
 
+        public DbSet<Customer> Order { get; set; }
+
+        public DbSet<Customer> OrderItem { get; set; }
+
+        public DbSet<Customer> Product { get; set; }
+
+        public DbSet<Customer> Supplier { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new CustomerConfig());

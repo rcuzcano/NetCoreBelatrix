@@ -13,7 +13,7 @@ namespace Belatrix.WebApi.Repository.Postgreql.Configurations
         {
             builder.ToTable("order");
 
-            builder.Property(p => p.CustomerId)
+            builder.Property(p => p.Id)
                 .HasColumnName("id")
                 .IsRequired();
 
@@ -30,6 +30,11 @@ namespace Belatrix.WebApi.Repository.Postgreql.Configurations
                 .HasColumnName("total_amount")
                 .IsRequired();
 
+            builder.HasIndex(e => new { e.CustomerId })
+                .HasName("order_customer_id_idx");
+
+            builder.HasIndex(e => new { e.OrderDate })
+                .HasName("order_order_date_idx");
         }
     }
 }
