@@ -10,7 +10,7 @@ namespace Belatrix.WebApi.Repository
         Task<int> Create(T entity);
         Task<IEnumerable<T>> Read();
         Task<bool> Update(T entity);
-        Task<int> Delete(T entity);
+        Task<bool> Delete(T entity);
 
     }
 }
