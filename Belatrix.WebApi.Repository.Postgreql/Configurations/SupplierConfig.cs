@@ -15,7 +15,7 @@ namespace Belatrix.WebApi.Repository.Postgreql.Configurations
 
             builder.Property(p => p.Id)
                 .HasColumnName("id")
-                .IsRequired();
+                .UseNpgsqlIdentityColumn();
 
             builder.Property(p => p.CompanyName)
                 .HasColumnName("company_name")
